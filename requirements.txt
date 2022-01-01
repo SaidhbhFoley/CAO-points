@@ -1,0 +1,31 @@
+List of packages used:
+Regualr Expressions
+    import re
+HTTP Requests
+    import requests as rq
+Dates and times
+    import datetime as dt
+
+import os
+
+Data frames
+    import pandas as pd
+
+For downloading
+    import urllib.request as urlrq
+
+Nice plots
+    import seaborn as sns
+
+Numpy
+    import numpy as np
+
+Matplotlib
+    import matplotlib.pyplot as plt
+
+Data files:
+CAO2021_csv20211128_131341.csv
+CAO2020_20211230_205737.csv
+CAO2019_20211113_105625_edited.csv
+CAO2018_20211211_133605.csv
+CAO2017_20211211_14-50-35_edited.csv
