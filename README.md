@@ -64,4 +64,57 @@ PyPlot is an API for Python's matplotlib that effectively makes matplotlib a via
 PyPlot provides matplotlib with two key features:
     - A MATLAB-style interface, allowing those familiar with MATLAB to adopt Python more easily
     - Staefullness, which means PyPlot stores the state of an object when it is first plotted.
-###
+
+The plots I will look into in this notebook are:
+    - Histograms
+    - Scatter plots
+    - Pie Charts
+
+### Histograms
+A histogram is a graphical representation that organizes a group of data points into user-specified ranges. Similar in appearance to a bar graph, the histogram condenses a data series into an easily interpreted visual by taking many data points and grouping them into logical ranges or bins.
+
+Bins are also sometimes called "intervals", "classes", or "buckets". Choice of bin size has an inverse relationship with the number of bins. The larger the bin sizes, the fewer bins there will be to cover the whole range of data. With a smaller bin size, the more bins there will need to be. If you have too many bins, then the data distribution will look rough, and it will be difficult to discern the signal from the noise. On the other hand, with too few bins, the histogram will lack the details needed to discern any useful pattern from the data.
+
+Histograms are commonly used in statistics to demonstrate how many of a certain type of variable occurs within a specific range. They are good for showing general distributional features of dataset variables.
+
+A density curve, or kernel density estimate (KDE), is an alternative to the histogram that gives each data point a continuous contribution to the distribution. In a KDE, each data point adds a small lump of volume around its true value, which is stacked up across data points to generate the final curve. The shape of the lump of volume is the ‘kernel’, and there are limitless choices available. Because of the vast amount of options when choosing a kernel and its parameters, density curves are typically the domain of programmatic visualization tools. These can be added to Histograms for extra visualisation.
+
+A good histogram can be a very quick way of accurately conveying the general shape and distribution of a data variable.
+
+#### Histograms vs. Bar Charts
+
+Both histograms and bar charts provide a visual display using columns, and people often use the terms interchangeably. More technically, a histogram represents the frequency distribution of variables in a data set. On the other hand, a bar graph typically represents a graphical comparison of discrete or categorical variables5.
+
+Histograms visualise quantitative data or numerical data, whereas bar charts display categorical variables.
+
+### Scatterplot
+
+A scatterplot uses dots to represent values for two different numeric variables. The position of each dot on the horizontal and vertical axis indicates values for an individual data point. Scatter plots are used to observe relationships between variables.
+
+Scatter plots’ primary uses are to observe and show relationships between two numeric variables. The dots in a scatter plot not only report the values of individual data points, but also patterns when the data are taken as a whole.
+
+A scatter plot can also be useful for identifying other patterns in data. We can divide data points into groups based on how closely sets of points cluster together. Scatter plots can also show if there are any unexpected gaps in the data and if there are any outlier points.
+
+Scatter plots show if there is any correlation between the variables. There are three types of correlation:
+
+Positive Correlation: as one variable increases so does the other.
+Negative Correlation: as one variable increases, the other decreases.
+No Correlation: there is no apparent relationship between the variables.
+
+### Pie Chart
+
+A pie chart shows how a total amount is divided between levels of a categorical variable as a circle divided into radial slices. Each categorical value corresponds with a single slice of the circle, and the size of each slice (both in area and arc length) indicates what proportion of the whole each category level takes.
+
+Pie charts have a fairly narrow use-case that is encapsulated particularly well by its definition. In order to use a pie chart, you must have some kind of whole amount that is divided into a number of distinct parts. Your primary objective in a pie chart should be to compare each group’s contribution to the whole, as opposed to comparing groups to each other. If the above points are not satisfied, the pie chart is not appropriate, and a different plot type should be used instead.
+
+#### Pie Chart vs Bar Chart
+
+Pie charts show how much each category represents as a proportion of the whole, by using a circular format with different-sized “slices” for different percentages of the whole. Bar graphs use a series of rectangular bars to show absolute values or proportions for each of the categories.
+
+Pie charts and bar charts look strikingly different from one another, but from the perspective of somebody looking for the best way to display data, the key differences are the fact that pie charts can only show proportions and that bar graphs can display changes in quantities over time.
+
+Below I will use data from worldometers on CO2 emissions14. I will use both a Pie Chart and a Bar Chart.
+
+### Conclusion
+
+In this notebook I have illustrate the ease of use PyPlot offers and some of the many plots it is possible to create.
